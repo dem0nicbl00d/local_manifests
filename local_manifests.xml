@@ -7,17 +7,14 @@
 <project path="device/motorola/condor" name="shubhmg/android_device_motorola_condor" remote="git" revision="aosp" />
 <project path="device/motorola/otus" name="shubhmg/android_device_motorola_otus" remote="git" revision="aosp" />
 <project path="device/motorola/msm8610-common" name="shubhmg/android_device_motorola_msm8610-common" remote="git" revision="aosp" />
-<project path="kernel/motorola/msm8610" name="VRToxin-Devices/android_kernel_motorola_msm8610" remote="git" revision="M"/>
-<project path="vendor/motorola" name="shubhmg/android_vendor_motorola_msm8610" remote="git" revision="cm-13.0" />
-
+<project path="kernel/motorola/msm8610" name="CyanogenMod/android_kernel_motorola_msm8610" remote="git" revision="cm-13.0"/>
+<project path="vendor/motorola" name="TheMuppets/proprietary_vendor_motorola" remote="git" revision="cm-13.0" />
 
 <!--Camera dependency-->
 <project path="external/sony/boringssl-compat" name="CyanogenMod/android_external_sony_boringssl-compat" remote="git" revision="cm-13.0" />
 
-
 <!--Snap camera-->
 <project path="packages/apps/Snap" name="CyanogenMod/android_packages_apps_Snap" remote="git" revision="cm-13.0" />
-
 
 <!--Add HALS-->
 <project path="hardware/qcom/audio-caf/msm8974" name="CyanogenMod/android_hardware_qcom_audio" remote="git" revision="cm-13.0-caf-8974" />
@@ -31,10 +28,6 @@
 
 <remove-project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="github" />
 <project name="shubhmg/platform_packages_apps_Settings" path="packages/apps/Settings" remote="git" revision="mm6.0" />
-
-<remove-project name="platform_vendor_aosp" path="vendor/aosp" remote="github" />
-<project name="shubhmg/platform_vendor_aosp" path="vendor/aosp" remote="git" revision="mm6.0" />
-
 
 <!--Layers Specific(Thanks Deepak Sharma)-->
 <remove-project name="platform/packages/apps/CellBroadcastReceiver" />
@@ -54,9 +47,4 @@
  
 <remove-project name="platform/packages/apps/ContactsCommon" />
 <project name="TechExhibeo/platform_packages_apps_ContactsCommon" path="packages/apps/ContactsCommon" remote="git" revision="mm6.0" /> 
-
-
-<!--Remove shit-->
-<remove-project name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox"/> 
-<remove-project name="platform/packages/apps/Browser" path="packages/apps/Browser" />
 </manifest>
