@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 <remote  name="git" fetch="https://github.com" />
+<remote  name="bb" fetch="https://bitbucket.org" />
 
 <!--Add Device Condor(Moto-E) -->
 <project path="device/motorola/condor" name="shubhmg/android_device_motorola_condor" remote="git" revision="aosp" />
@@ -31,5 +32,12 @@
 
 <remove-project name="platform_system_vold" path="system/vold" />
 <project name="dem0nicbl00d/platform_system_vold" path="system/vold" remote="git" revision="mm6.0" />
+
+<!--UBERTC (fake path cuz m lazy :P)-->
+<remove-project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
+<project name="UBERTC/arm-eabi-5.3" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="bb" revision="master" />
+
+<remove-project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
+<project name="UBERTC/arm-linux-androideabi-5.3" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" remote="bb" revision="master" />
 
 </manifest>
