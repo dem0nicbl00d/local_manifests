@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <project path="vendor/asus" name="BlissRoms-Devices/proprietary_vendor_asus" remote="github" revision="q" />
+    <project path="device/asus/Z01R" name="DerpFest-Devices/android_device_asus_Z01R" remote="github" revision="derp10" />
+    <project path="kernel/asus/sdm845" name="DerpFest-Devices/android_kernel_asus_sdm845" remote="github" revision="ten" />
+    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi" name="AOSPA/android_prebuilts_gcc_linux-x86_arm_arm-eabi" remote="github" revision="master" /> 
+</manifest>
